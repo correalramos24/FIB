@@ -40,9 +40,9 @@ Per pintar el model geometric, caldra doncs:
 
    GLunit VAO1;
 
-   glGenVertexArrays(n, GLuint *array) //generar n-id's, i els deixa al array.
+   **glGenVertexArrays(n, GLuint *array)** //generar n-id's, i els deixa al array.
 
-   glBindVertexArray(GLuint a) //activar VAO a
+   **glBindVertexArray(GLuint a)** //activar VAO a
 
 2. Crear VBO per la llista de vèrtexs.
 
@@ -70,10 +70,14 @@ Per pintar el model geometric, caldra doncs:
 
    **glDrawArrays(GL_TRIANGLES, index, count);** //pinta a la pantalla
 
-   ​
+   Apart de triangles, OpenGL pot dibuixar altres primitives GL_LINES,GL_POINTS, ...
 
-   ​
 
+### EXEMPLE COMPLET
+
+A MyGLWidget.h estan els atributs de la classe derivada, on s'implementen els metodes virtuals dits anteriorment.  Limplementacio esta al MyGLWidget.cpp
+
+​
 
 
 ​	
