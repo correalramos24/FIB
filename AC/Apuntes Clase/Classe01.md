@@ -12,50 +12,119 @@ Hay pocos registros.
 
 ### Vision del Programador
 
-EIP: Contador de programa, apunta a la siguiente instruccion a ejecutar.
+* Registros: Espacio <u>lineal</u> de 2^32^ posiciones de 1 byte.
 
-Registros: Espacio <u>lineal</u> de 2^32^ posiciones de 1 byte.
+  Los registros que hay disponibles son: %eax, %ebx, %ecx, %edx, %esi, %edi;
 
-* [poner diferentes registros que hay].
+  Todos estos registros son de 32 bits. Pero el mismo registro(de %eax a %edx) se puede acceder como registro de 16 bits unico (%ax, %bx, %cx) o como dos de 8 bits(%ah, %al, ...).
 
-EEFlags(Codigo Condicion): Informacion sobre comportamiento de las inst.
+  Tambien hay algunos registros especiales:
 
-Memoria:
+  %esp, %ebp y su version de 16 bits, estan destinados para trabajo en subrutinas.
 
-* Codigo Objecto, Datos Programa, Datos SO. Direccionable a nivel de byte.
-* Stack del proceso
-* Modos de direccionamiento:
+  %eip esta destinado al program counter.
+
+  %eflags esta destinado a la palabra de estado.
+
+* EEFlags(Codigo Condicion)
+
+  Informacion sobre comportamiento de las instrucion(bit carry, bit de Z, etc..)
+
+* Memoria:
+
+  Codigo Objecto, Datos Programa, Datos SO. Direccionable a nivel de byte.
+
+  Stack del proceso:
+
+  Modos de direccionamiento:
   * Inmediato: $19  (Byte, Word o LongWord)
-  * Registro: %eax, %ah, %esi
-  * Memoria: D(rB, rI, s) -> M[rB+rI*s + D]
-
-Tipos de datos Basicos: 
-
-* Enteros(1, 2 o 4 Bytes), Reales(Float 4, 8 o 10 Bytes). 
+  * Registros: %eax, %ebx, %ah, ...
 
 
-* Se utiliza Little Endian!
-* [Rangos ...]
+  * Memoria: D(rB, rI, s) -> M[rB+rI * s + D] //@BASE + (Index * Escala) + Offset
 
-Operaciones Primitivas: Aritmeticologicas, Transferencia de datos y Saltos.
+* Tipos de datos Basicos: 
 
-[Instrucciones....]
+  Hay que destacar que los tipos de datos estan diseñados para byte(int), word(int), longword(int) o quadword(float).
 
-#### Instrucciones(17/69):
+  Se utiliza Little Endian!
 
-OpCode: 1-2 Bytes
+  | RANGOS:          | Byte(8 bits) | Word(16)         | LongWord(32)                   |
+  | ---------------- | ------------ | ---------------- | ------------------------------ |
+  | Naturales        | 255          | 65.535           | 4.294.967.215                  |
+  | Enteros(Ca2)     | -128 a 127   | -32.768 a 32.767 | -2.147.483.648 a 2.147.483.647 |
+  | Reales(IEEE 754) |              |                  | 2.23 * 10^-38^ a 1.79 * 10^38^ |
 
-Modo: 1 byte
+  * [Repasar IEEE 754]
 
-SIB: 
+### Operaciones Primitivas: Aritmeticologicas, Transferencia de datos y Saltos.
+
+#### Codificación Instrucciones(17/69)
+
+​	OpCode: 1-2 Bytes
+
+​	Modo: 1 byte
+
+​	SIB: 
 
 * Scale(2 bits): 0, 1, 2, 3 son los possibles valores.
+
 * Index(3 bits)
+
 * Base(3 bits)
 
-Desplazamiento: 0, 1,2 o 4 Bytes.
+  Desplazamiento: 0, 1,2 o 4 Bytes.
 
-Inmediato: 0, 1, 2 o 4 bytes.
+  Inmediato: 0, 1, 2 o 4 bytes.
+
+#### Instrucciones de Movimiento de Datos
+
+| INSTRU             | Desc                                   |           Complementos           |                             |
+| ------------------ | :------------------------------------- | :------------------------------: | :-------------------------: |
+| MOVx op1, op2      | op2 <- op1                             | **L**ongWord, **W**ord, **B**yte |         Movimiento          |
+| MOVSxy op1, op2    | op2 <-Extsign(op1)                     |          BaW, BaL, WaL           |         Movimiento          |
+| MOVZSxy op1, op2   | op2 <-Extzero(op1)                     |          BaW, BaL, WaL           |         Movimiento          |
+| PUSHL op1          | %esp <= %esp - 4, M[%esp] <= op1       |                                  |  Movimiento para llamadas   |
+| POPL op1           | op1 <= M[%esp], %esp <= %esp + 4       |                                  |  Movimiento para llamadas   |
+| LEAL op1, op2      | op2 <= &op1                            |             op1: @M              |         Aritmetica          |
+| ADDx op1, op2      | op2 <= op2+op1                         |             L, W, B              |         Aritmetica          |
+| SUBx op1, op2      | op2 <= op2-op1                         |             L, W, B              |         Aritmetica          |
+| ADCx op1, op2      | op2 <= op2 + op1 + CF                  |             L, W, B              |         Aritmetica          |
+| SBBx op1, op2      | op2 <= op2 - op1 - CF                  |             L, W, B              |         Aritmetica          |
+| INCx op1           | op1 += 1                               |             L, W, B              |         Aritmetica          |
+| DECx               | op1 -= 1                               |             L, W, B              |         Aritmetica          |
+| NEGx               | op1 = - op1                            |             L, W, B              |         Aritmetica          |
+| IMUL op1, op2      | op2 <= op2 * op1                       |              op2: %              |         Aritmetica          |
+| IMUL inm, op1, op2 | op2 <= op1 * inm                       |             inm: $,              |       Multiplicacion        |
+| IMULL op1          | %ext <= op1 * %eax                     |           op1: @M o %            |   Multiplicacion Enteros    |
+| MULL op1           | %ext <= op1 * %eax                     |           op1: @M o %            |  Multiplicacion Naturales   |
+| CLTD               | %ext : ExtSign(%eax)                   |                                  |       Extension Signo       |
+| IDIVL op1          | %eax <= %ext / op1, %edx <= %ext % op1 |           op1: @M o %            |      Division Enteros       |
+| DIVL op1           | %eax <= %ext / op1, %edx <= %ext % op1 |           op1: @M o %            |     Division Naturales      |
+| ANDx op1,op2       | op2 <= op1 & op1                       |             L, W, B              |           Lógicas           |
+| ORx op1, op2       | op2 <= op2 \| op1                      |             L, W, B              |           Lógicas           |
+| XORx op1, op2      | op2 <= op2 ^ op1                       |             L, W, B              |           Lógicas           |
+| NOTx op1           | op1 <= ! op1                           |          L, W, B; k: $           |           Lógicas           |
+| SALx k, op1        | op1 <= op1 << k                        |          L, W, B; k: $           |           Lógicas           |
+| SHLx k, op1        | op1 <= op1 << k                        |          L, W, B; k: $           |           Lógicas           |
+| SARx k, op1        | op1 <= op1 >> k                        |          L, W, B; k: $           |           Lógicas           |
+| SHRx k, op1        | op1 <= op1 >> k                        |          L, W, B; k: $           |           Lógicas           |
+| CMPx op1, op2      | op2 - op1                              |              FLAGS!              |           Lógicas           |
+| TESTx op1, op2     | op2&op1                                |              FLAGS!              |        op1 == op2 ?         |
+| JMP etiq           |                                        |                                  |     Salta Incondicional     |
+| JMP op             |                                        |                                  |     Salta Incondicional     |
+| Jcc etiq           |                                        |                                  |  Salta condicional Enteros  |
+| Jcc etiq           |                                        |                                  | Salta condicional Naturales |
+| Jcc etiq           |                                        |                                  |   Salta condicional flags   |
+| CALL etiq          |                                        |                                  |         Llamar f(x)         |
+| CALL op            |                                        |                                  |         Llamar f(x)         |
+| RET                |                                        |                                  |           Retorna           |
+
+%ext = %edx : %eax 
+
+#### Tabla de Flags
+
+[...]
 
 ### Traduccion de Sentencias C a Ensamblador
 
