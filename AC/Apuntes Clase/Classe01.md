@@ -163,3 +163,4 @@ Hay pocos registros.
   3d i, j, k: @3d + (i * Numero_cara2 * Numero_cara3 + j * Numero_cara3 + k) * sizeof(tipo)
 
 A la hora de acceder a una matriz de 50 por 80, se ejecutan 32267 instruciones, hace falta mejorarlo.
+Seguira en la classe 02.
