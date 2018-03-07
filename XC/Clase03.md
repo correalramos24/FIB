@@ -1,6 +1,6 @@
 ### Tabla Enrutamiento
 
-[Ejemplo Enrutamiento]
+[Poner Ejemplo enrutamineto]
 
 Las tablas pueden ser Estaticas(se programan de antemano las tablas) o pueden ser dinamicas, que a traves de algoritmos se van actualizando las tablas.
 
