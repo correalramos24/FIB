@@ -76,7 +76,7 @@ Hay pocos registros.
 
   Inmediato: 0, 1, 2 o 4 bytes.
 
-#### Instrucciones de Movimiento de Datos
+#### Instrucciones
 
 | INSTRU             | Desc                                         |           Complementos           |                             |
 | ------------------ | :------------------------------------------- | :------------------------------: | :-------------------------: |
