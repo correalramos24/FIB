@@ -1,4 +1,4 @@
-### vUniforms als shaders
+### Uniforms als shaders
 
 Son com variables globals que son nomes de lectura. S'han de declarar a la classe i fer una associacio per nom. Algunes de les funcionalitats mes utilitzades son:
 
