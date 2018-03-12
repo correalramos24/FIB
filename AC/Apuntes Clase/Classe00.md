@@ -14,9 +14,6 @@ BIBLIOGRAFIA:
 
 +PROBLEMAS:0% (Es el contenido del examen)
 
-    PNW- (1.1, 1.2, 1.6, 1.9, 1.11) 1ra SEMANA Problemas, esta semana no Lab y no Problemas.
-    Resoldre problemes en casa, se entrega una version de los problemas por grupo.
-
 +EXÀMENES: 80%.	**NO HI HA EX. FINAL.**
 
 
