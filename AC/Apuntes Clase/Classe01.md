@@ -115,9 +115,9 @@ Hay pocos registros.
 | Jcc etiq           | %eip <= etiq (if)                            |     cc: E, NE, G, GE, L, LE      |  Salta condicional Enteros  |
 | Jcc etiq           | %eip <= etiq (if)                            |         cc: A, AE, B, BE         | Salta condicional Naturales |
 | Jcc etiq           | %eip <= etiq (if)                            |       cc: Z, NZ, C, NC, O        |   Salta condicional flags   |
-| CALL etiq          | %esp <= %esp - 4; M[%esp]<=EIP; EIP <= &etiq |    Guarda @ ret i PC = & etiq    |         Llamar f(x)         |
-| CALL op            | %esp <= %esp - 4; M[%esp]<=EIP; EIP <= &etiq |     Guarda @ ret i PC = & op     |         Llamar f(x)         |
-| RET                | EIP <= M[%esp]; %esp <=%esp+4                |                                  |           Retorna           |
+| CALL etiq          | %esp <= %esp - 4; M[%esp]<=EIP; %eip<= &etiq |    Guarda @ret i PC = & etiq     |         Llamar f(x)         |
+| CALL op            | %esp <= %esp - 4; M[%esp]<=EIP; %eip<= &etiq |     Guarda @ret i PC = & op      |         Llamar f(x)         |
+| RET                | %eip<= M[%esp]; %esp <=%esp+4                |                                  |           Retorna           |
 
 %ext = %edx : %eax 
 
