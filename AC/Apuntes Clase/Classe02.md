@@ -79,7 +79,7 @@ En C-linux 32 bits, los parametros se pasan por la pila, **de derecha a izquierd
 
   Si una subrutina quiere modificarlos, debe guardarlos --> El padre no debe guardarlos al invocar.
 
-* Registros %ebp, %ess
+* Registros %ebp, %esp
 
   Registros para la gestion de la pila.
 
