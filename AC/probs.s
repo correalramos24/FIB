@@ -2,15 +2,17 @@
 
 	movl 12(%ebp), %eax	#@*x
 	movl (%eax), %eax	#CONTENIDO *X -->%eax
-	movl -12(%ebp),%ebx #aux.i3 --> %ebx
-	addl %ebx, %eax		#suma
+	addl -12(%ebp), %eax	#suma
+	popl %ebp	
+	popl %esp
+	ret
 	
 19 d) aux.i1 = F(&(*p1).tabla[j], y)
 
 	pushl 16(%ebp)           #push y
-	movl -44(%ebp), %ecx     #j -> %ecx
+	movl -4(%ebp), %ecx     #j -> %ecx
 	movl +8(%ebp), %ebx      #(*p1)
-	imult %ecx, $38          #j*38
+	imul %ecx, $38          #j*38
 	addl %ebx, %ecx          #@base + .taula[j]
 	pushl %ebx
 	call F          # resultat per %eax
@@ -18,17 +20,16 @@
 
 19 e) i = j * y
 
-	movl -44(%ebp), %eax   # j -> %eax
-	imul +16(%ebp), %eax   # eax = j * y
-	movl %eax ,%esp        # i = j * y
+	movl -4(%ebp), %eax   # j -> %eax
+	imul +16(%ebp), %eax  # eax = j * y
+	movl %eax ,-8(%ebp)   # i = j * y
 
 19 f) aux.c2[i] = aux.c2[23]
 
 	leal 4(%ebp, -38, 1),%eax  #@base aux.c2
-	movl %eax, %ecx            #copia @base
 	addl $23, %eax             #@base + 23 = aux.c2[23]
 
-	movl %esp, %ebx             #i
+	movl -8(%ebp), %ebx             #i
 	addl %ecx, %ebx             #i+@base
 	movl %eax, (%ebx)           #aux.c2[i] = aux.c2[23]
 
@@ -36,9 +37,9 @@
 		(*p1).tabla[i].i1 = (*p1).tabla[i].i3 + i;
 	
 	xorl %ecx, %ecx		# i = 0;
-for:cmpl %ecx, -4(%ebp),#i<y
+for:	cmpl %ecx, -4(%ebp),#i<y
 	jge fi_for
-	movl 12(%ebp),%ebx			#*p1 a %ebx
+	movl 12(%ebp),%ebx		#*p1 a %ebx
 	movl 3800(%ebx), %edx		#p1->n
 	cmp %ecx, %edx			#i < (*p1.n)
 	jge fi_for
@@ -62,10 +63,17 @@ else:
 fi_if:
 
 19 i)	i = 0;
-		while (aux.c2[i] != ‘.’) {
-			aux.c2[i] = ‘#’;
-			i++;
-		}
+	while (aux.c2[i] != ‘.’) {
+		aux.c2[i] = ‘#’;
+		i++;
+	}
+
+	xorl %ecx, %ecx			#i = 0
+while:	cmpl -46(%ebp,%ecx), '.'			
+	je fi_while
+	movl '#', -46(%ebp,%ecx) 	#@base aux+(i*1)
+	incl %ecx			#++i
+fi_while:
 		
 		
 		
