@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
                {'!',  7, &a}, {'-',  2, &b}, {'i', 25, &a}, {'z', 32, &b},
                {' ', 0x80000000, NULL}};
 	       
-   if (argc == 2){ 
+   if (argc == 2){ //1 real
      Y.k = atoi(argv[1]); /* elemento a buscar */
    }  
    
