@@ -4,7 +4,7 @@ CFLAGS = -g -Wall -m32
 SRC0 = Main.c Asignar.c Buscar.c BuscarElemento.c Insertar.c Intercambiar.c Ordenar.c Volcar.c elemento.h
 SRC1 = Main.c Asignar.c Buscar.c BuscaElemento.s Insertar.c Intercambiar.c Ordenar.c Volcar.c elemento.h
 SRC2 = Main.c Asignar.c Busca.s BuscaElemento.s Insertar.c Intercambiar.c Ordenar.c Volcar.c elemento.h
-
+SRC3 = Main.c Asignar.c Busca.s BuscarElemento.c Insertar.c Intercambiar.c Ordenar.c Volcar.c elemento.h
 
 
 test0: 
@@ -14,8 +14,11 @@ test1:
 	$(CC) $(CFLAGS) -o Sesion04-1 $(SRC1)
 	
 test2: 
-	$(CC) $(CFLAGS) -o Sesion04-2 $(SRC2)	
+	$(CC) $(CFLAGS) -o Sesion04-2 $(SRC2)
+
+test3:
+	$(CC) $(CFLAGS) -o Sesion04-3 $(SRC3)
 
 clean:
-	$(RM) Sesion04-0 Sesion04-1 Sesion04-2
+	$(RM) Sesion04-0 Sesion04-1 Sesion04-2 Sesion04-3
 

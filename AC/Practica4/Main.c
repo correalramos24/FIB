@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
    n = Insertar(v, X);
    n = Volcar(v);
 
-   trobat = Buscar(v, Y, n);
+	trobat = Buscar(v, Y, n);
    if (trobat >= 0) printf("%3d encontrado en %3d\n", Y.k, trobat);
                else printf("%3d NO encontrado\n", Y.k);
 
