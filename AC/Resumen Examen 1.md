@@ -1,22 +1,4 @@
-
-# CLASE 00
-
-Teoria==> Fermin Sanchez: fermin@ac.upc.edu.
-
-BIBLIOGRAFIA:
-
-+Laboratorios: 20%
-11 sesiones, 1-10 con previo-parejas. 11 examen individual.
-1-10 -> 50%
-11 -> 50%
-
-+PROBLEMAS:0% (Es el contenido del examen)
-
-+EXÀMENES: 80%.	**NO HI HA EX. FINAL.**
-
-## TEMA 1: FUNDAMENTOS DE DISEÑO Y EVALUACION DE COMPUTADORES
-
-### Métricas
+### T1: Métricas
 
 #### Sostenibilidad:
 
@@ -114,3 +96,5 @@ Disponibilidad &= \frac{MTTF}{MTTF + MeanTimeToRepair} = \frac{MTTF}{Mean Time B
 \frac{1}{MTTF_{sistema}} &= \frac{1}{MTTF_1} + \frac{1}{MTTF_2} ...
 \end{align*}
 $$
+
+### T2: 
