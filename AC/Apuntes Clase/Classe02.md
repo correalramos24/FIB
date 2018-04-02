@@ -8,7 +8,13 @@
 
 Sirven para hacer operaciones con una cantidad grande de bytes(128).
 
-[tabla de instrucciones]
+| INSTRUCCION | Desc                                     | paquetes*bits paquete |
+| ----------- | ---------------------------------------- | --------------------- |
+| PADDB       | Suma paquetes de bytes                   | 16*8                  |
+| PADDW       | Suma paquetes de words                   | 8*16                  |
+| PADDD       | Suma paquetes de doubleword              | 4*32                  |
+| PADDQ       | Suma paquetes de quadword                | 2*64                  |
+| ADDPS       | Suma paquetes de floats single-precision | 4*32                  |
 
 ### Structs
 
@@ -55,7 +61,7 @@ En C-linux 32 bits, los parametros se pasan por la pila, **de derecha a izquierd
 
 3. Variables locales y salvar estado del llamador
 
-   Agrandamos la pila, subiendo el %esp para hacer caber las variables locales, en el orden que se declaran. Los registros que necesitaremos utilizar (%ebx, %esi o %edi) los guardamos en la pila; los otros pueden ser modificados sin problema.
+   Agrandamos la pila, subiendo el %esp para hacer caber las variables locales, en el orden que se declaran, de arriba a abajo. Los registros que necesitaremos utilizar (%ebx, %esi o %edi) los guardamos en la pila; los otros pueden ser modificados sin problema.
 
 4. Cuerpo de la subrutina y retorno
 

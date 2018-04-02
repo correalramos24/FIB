@@ -78,7 +78,7 @@ Hay pocos registros.
 
 #### Instrucciones
 
-| INSTRU             | Desc                                         |           Complementos           |                             |
+| INSTRU             | Desc                                         |           Complementos           |            Tipo             |
 | ------------------ | :------------------------------------------- | :------------------------------: | :-------------------------: |
 | MOVx op1, op2      | op2 <- op1                                   | **L**ongWord, **W**ord, **B**yte |         Movimiento          |
 | MOVSxy op1, op2    | op2 <-Extsign(op1)                           |          BaW, BaL, WaL           |         Movimiento          |
