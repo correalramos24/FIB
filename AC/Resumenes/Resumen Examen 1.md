@@ -101,8 +101,6 @@ $$
 
 ### Conceptos Basicos
 
-
-
 #### Tipos Basicos, En little Endian
 
 | RANGOS:      | Byte(8 bits) | Word(16)         | LongWord(32)                   |
@@ -163,7 +161,7 @@ Las estructuras, debe cumplir la restriccion del elemento maximo(maxima alineaci
 
 
 
-## GESTIO DE SUBRUTINAS
+### GESTIO DE SUBRUTINAS
 
 En C-linux 32 bits, los parametros se pasan por la pila, **de derecha a izquierda**.
 
@@ -217,3 +215,110 @@ En C-linux 32 bits, los parametros se pasan por la pila, **de derecha a izquierd
 
   Registros para la gestion de la pila.
 
+### T3: Jerarquia de Memorias
+
+### Conceptos Basicos
+
+  ​	**Procesador --> Memoria Cache(1MB) --> Memoria Princial(8GB) --> Disco**
+
+  La velocidad de los procesadores agravan la poca velocidad de la MP. La MC es 8000 veces mas rapida MP que MC, MP es mas barato que MC.
+
+  El 90% de todas las referencias a memoria son realizadas por el 10% del codigo, esto es denominado con la regla del 90/10.
+
+  El comportamiento de los programas con instruccciones y aceso a Memoria que se repiten, afavorecen los dos tipos de localidad(Espacial y Temporal), que nos dan a utilidad a la Memoria Cache.
+
+  - Localidad Espacial:  "Si accedemos a una posicion, problablemente acederemos a la siguiente".
+  - Localidad Temporal: "Si accedemos a una posicion, probablemente accederemos otra vez en un futuro a esa posicion".
+
+  Para aprovechar estas dos localidades, que son propias de nuestros programas, se utiliza unas jerarquias de Memorias, obteniendo mayor velocidad en los acesos a memoria.Hay que destacar que el bus entre MP i MC es muy ancho, para poder almacenar los datos en formal de bloques.
+
+  ### Principos de Memoria Cache
+
+  El **algoritmo de emplazamiento** es el que nos dice a donde va cada bloque de MP en la MC.
+
+  - Emplazamiento Directo
+
+    Cada bloque de MP solo va a un bloque de MC.
+
+  - Emplazamiento Completamente Associativo
+
+    Cada linea de MC puede contener cualquier bloque de MP.
+
+  - Emplazamiento Associativo por conjuntos
+
+    Se divide la MC en N bloques y cada bloque de MP siempre va a un Conjunto predeterminado.
+
+  En la Memoria Cache, se guardara un TAG para saber cual es la @ real en MP. Para identificar la linea de MC, sobre una @ de MP,  se utilizan K bits que permiten identificar la linea de MP, menos en el emplazamiento completamente asociativo. 
+
+  Los **algoritmos de reemplazo** son los que nos dicen, en el caso que la MC este llena, que bloque sacaremos:
+
+  Hay que destacar que estos algoritmos se implementan en HW, por lo que deben ser muy rapidos y senzillos.
+
+  - LRU(Least Recently Used)
+  - Random
+  - FIFO(First In First Out == Queue)
+
+  Tambien hay una **politica de escritura**(30/51), para realizar las escrituras en la memoria, que responden a <u>Cuando</u> se escribe en MP y a <u>Que hacer en caso de fallo de cache</u>.
+
+  - Write Through(escritura a través)
+  - Copy Back(escritura diferida)
+  - Write Allocate(migración)
+  - Write No Allocate(no migración)
+
+  Tasa de fallos + 1
+
+### Rendimiento Cache - Tasa de Falos/Aciertos
+
+$$
+h = aciretos/referencias
+$$
+
+$$
+m = fallos/referencias = 1-h
+$$
+
+- Depende del tamaño cache, Tamaño bloque, Algoritmo Emp y Rem y el programa.
+
+**Programa:** Depende del programa, aleatoriamente cambia la tasa de fallos.
+
+**Tamaño cache:** <u>Aumentar el tamaño de cache</u>(de datos o de instrucciones) provoca que la tasa de fallos disminuya.
+
+**Tamaño del Bloque:** Depende del tamaño de la cache tambien; 
+
+- Con cache pequeña y tamaño de bloque alto ==> Muchos fallos (si hay poca localidad)
+- Con cache intermedia, bloque grande van mejor
+- Con cache grande y tamaño de bloque alto ==> Pocos fallos (con cache )
+
+No hay un tamaño de bloque bueno, una vez elegido el tamaño de la cache luego hay que elegir el tamaño de bloque, un bloque muy grande puede provocar muchos fallos(41/51).
+
+**Associatividad:** Siempre, <u>a mayor grado de associatividad</u> (vias) mejor; se nota mas en caches pequeñas de bloques.
+
+### Rendimiento - Tiempo de Servicio en Acierto (TSA)
+
+Depende del tamaño de Cache y de los algoritmos de Emplazamiento y Reemplazo, se estudia porque el acceso a cache esta en el camino critico de un procesador y puede modificar el tiempo de ciclo de este.
+
+**Associatividad:** A mayor grado de associatividad(vias), peor TSA.
+
+**Tamaño Cache:** A mayor tamaño, pero TSA.
+
+### Rendimiento - Tiempo medio de acceso (TMA)
+
+- Coste de acceso en fallo = tsa + tpf(penalty por fallo)
+
+$$
+TMA = h*tsa + m*tsf  = tsa + m*tpf
+$$
+
+Solo aplicable en casos de lectura! no se tiene en cuenta politicas de escritura.
+
+### Rendimiento - Tiempo Ejecucción de un Programa
+
+$$
+Tejec = N*CPI*Tc
+$$
+
+$$
+CPImem = nr * (Tma -Tsa) = nr * m * tpf(siendo solo lectura)
+$$
+
+siendo nr: numero medio de refs por instruccion.

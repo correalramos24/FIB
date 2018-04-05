@@ -56,9 +56,15 @@ siendo nr: numero medio de refs por instruccion.
 
 ## Tema 3 Memoria Virtual
 
-Se crea una distincion en todo el sistema(desde Procesador hasta Disco), donde existen unas direcciones lógicas para cada programa, haciendo los programas reubicables. Se necesita una traducción de direcciones y un sitio donde guardar la correspndencia entre @virtual y @fisica (tabla de páginas completamente associativo).
+Se crea una distincion en todo el sistema(desde Procesador hasta Disco), donde existen unas direcciones lógicas para cada programa, haciendo los programas reubicables. 
 
+Se necesita una traducción de direcciones y un sitio donde guardar la correspndencia entre @virtual y @fisica (tabla de páginas completamente associativa). Se acompaña de un bit de presencia(p) y un bit de modificacion (m).
 
+Cada proceso tiene sus propias @VPN, @PPN y su propia Tabla de paginas. Esta TP se ccede en cada acceso a memoria. Este modelo de TP es impossible por el tamaño que tendria(se utilizan varios niveles de TP en la vida real).
+
+El TLB(translatio Lookaside Buffer) es una MCache de la TP, que hace que la traduccion de @ sea mas rapida.
+
+[parte de paginacion etc...]
 
 
 
