@@ -1,6 +1,4 @@
 #include <QApplication>
-#include <QSurfaceFormat>
-
 #include "MyForm.h"
 
 int main (int argc, char **argv) 
