@@ -3,7 +3,8 @@
 /* Posa aqui les teves estructures de dades globals
  * per mantenir la informacio necesaria de la cache
  * */
-
+int mc[128];
+int v_mc[128];
 
 
 
