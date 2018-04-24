@@ -1,25 +1,23 @@
 #include "CacheSim.h"
 
-/* Posa aqui les teves estructures de dades globals
- * per mantenir la informacio necesaria de la cache
- * */
+#define TAM_BYTE 4
 
+//MAPEO DIRECTO
+//4KBYTES TAMAÑO MC = 
+//32BYTES POR LINEA = 
+//Act simultanea + No migracion fallo escritura
 
-
-
-/* La rutina init_cache es cridada pel programa principal per
- * inicialitzar la cache.
- * La cache es inicialitzada al començar cada un dels tests.
- * */
+int cache[128];
+int valid[128];
+int fallos;
+int aciertos;
 void init_cache ()
 {
-	/* Escriu aqui el teu codi */
-
-
-
+	for(int i = 0; i < 128; i++) valid[i]=0;
+	fallos = 0;
+	aciertos = 0;
 }
 
-/* La rutina reference es cridada per cada referencia a simular */ 
 void reference (unsigned int address, unsigned int LE)
 {
 	unsigned int byte;
@@ -34,26 +32,51 @@ void reference (unsigned int address, unsigned int LE)
 	unsigned int replacement;
 	unsigned int tag_out;
 
-	/* Escriu aqui el teu codi */
+	byte = address & 31;
+	bloque_m = address / 32;
+	linea_mc = bloque_m & 127;
+	tag = bloque_m / 128;
+	
+	miss = (valid[linea_mc] == 0) || (cache[linea_mc] != tag);
 
+	if(miss) fallos++;
+	else aciertos++;
+	
+	replacement = (cache[linea_mc] != tag) && (valid[linea_mc] == 1) && (LE != escriptura);
 
+	if(valid[linea_mc] == 0 && (LE != escriptura)){
+		valid[linea_mc] = 1;
+		tag_out = 0;
+		cache[linea_mc] = tag;
+	}
+	else if(cache[linea_mc] != tag && (LE != escriptura))
+	{
+		tag_out = cache[linea_mc];
+		cache[linea_mc] = tag;
+	}
+	else if(cache[linea_mc] == tag) tag_out = 0;
 
+	if(LE == lectura)
+	{
+		esc_mp = false;
+		mida_esc_mp = 0;
+		if(miss){
+			lec_mp = true;
+			mida_lec_mp = 32;
+		}
+		else{
+			lec_mp = false;
+			mida_lec_mp = 0;
+		}
+	}
+	if(LE == escriptura)
+	{
+		lec_mp = false;
+		mida_lec_mp = 0;
+		esc_mp = true;
+		mida_esc_mp = 1;	
+	}
 
-
-
-
-
-
-
-
-
-
-
-
-	/* La funcio test_and_print escriu el resultat de la teva simulacio
-	 * per pantalla (si s'escau) i comproba si hi ha algun error
-	 * per la referencia actual
-	 * */
 	test_and_print (address, LE, byte, bloque_m, linea_mc, tag,
 			miss, lec_mp, mida_lec_mp, esc_mp, mida_esc_mp,
 			replacement, tag_out);
@@ -63,6 +86,6 @@ void reference (unsigned int address, unsigned int LE)
 void final ()
 {
  	/* Escriu aqui el teu codi */ 
-  
-  
+	printf("fallos: %d \n", fallos); 
+  	printf("hits: %d \n", aciertos);
 }
