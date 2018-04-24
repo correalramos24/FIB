@@ -8,7 +8,7 @@ DHCP configura automaticamente los aspectos para entrar en una red. Existe en un
 * Gateway/Router por defecto.
 * @ servidor DNS **local**
 
-Para que el servidor de DHCP pueda establecer el protocolo, se hace un broadcast a toda la subred, haciendo que si hay mas de uno, solo uno pueda responder. El router suele ser tambien servidor DHCP.
+Para que el servidor de DHCP pueda establecer el protocolo, se hace un broadcast a toda la subred, haciendo que si hay mas de uno, solo uno pueda responder. El router de casa suele ser tambien servidor DHCP.
 
 El protocolo se establece en dos fases, una de busqueda de DHCP i una posterior configuracion. Se puede hacer solo la segunda fase directamente si ya se sabe la @ del servidor DHCP. 
 
@@ -38,5 +38,5 @@ El transporte tambien tiene un numero de puerto(port) de 0 a 1024 estan reservad
 
 
 
-
+es aplicacion, en el esquema OSI.
 

@@ -1,0 +1,11 @@
+
+
+AFEGIR TASCA
+//Pre: Si el presupost de la tasca a afegir no fa que la suma dels costos de les tasques es major que el presupost del projecte
+//Post: S'ha creat un objecte de tipus Tasca associat a un projecte
+
+Context: Sistema::AfegirTasca(nom: string, cT: String, p: Integer)
+Pre: //RESTRICIO D'INTEGRITAT 3
+Post: Tasca.allInstances()->exists(t|t.oclIsNew() and 
+									t.codiTasca = ct and
+									t.presupost = p)
