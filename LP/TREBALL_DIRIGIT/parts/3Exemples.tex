@@ -1,0 +1,70 @@
+
+Vegem un exemple de com un llenguatge amb \textit{garbage collector} com a gestor fa que treballar amb objectes i memòria dinàmica sigui més fàcil pel programador. Veurem exemples d'ùs en Java (llenguatge orientat a objectes pur) i Python (llenguate d'\textit{scripting} amb suport per l'orientació a objectes).
+
+\subsection{Java}
+A Java, els objectes son referenciats per les variables del codi (les variables son apuntadors a objecte). L'operador '=' assigna a la variable la direcció de l'objecte. Mirant la referència d'ús del Java \footfullcite[Creating Objects, Using objects]{javaOBJusage} els objectes es poden utilitzar així:
+
+\begin{minted}[fontsize=\footnotesize]{java}
+    import java.util.*;
+    
+    public class myClass{
+        int atb1, atb2;
+        
+        myClass(int a, int b){
+            atb1 = a;
+            atb2 = b;
+        }  
+        int add(){return atb1+atb2;} 
+
+        public static void main(String []args){
+            myClass instance = new myClass(1,2);
+            myClass arrayOBJ[] = new myClass[2];
+            List<myClass> l = new ArrayList<myClass>();
+            System.out.println(instance.add());
+            int a = arrayOBJ[1].add();  //java.lang.NullPointerException
+            instance = null;
+            System.out.println(instance.add());//java.lang.NullPointerException
+        }
+    }
+\end{minted}  
+
+Al exemple tenim una definició de classe i un programa per utilitzar-la. 
+
+Tots els objectes a Java s'instancien i inicialitzen cridant al constructor amb la paraula clau \textit{new}. Es pot declarar un objecte sense instanciar ni inicialitzar, fet que el llenguatge tracta llançant una excepció si accedim a aquest objectes.
+
+Al exemple s'ha declarat un \textit{array} de dos objectes que no s'instancien mai, si provem de cridar als seus atributs o mètodes, l'execucció del programa acaba amb una \textit{NullPointerException}. En el cas del llenguatge C no teniem aquest comportament si no inicialitzavem les variables o objectes.
+
+La destrucció dels objectes es fa automàticament (o via crida a System.gc()) via \textit{garbage collector}. Un objecte es triable per ser destruït en el moment que l'objecte no té cap referència a memòria. 
+
+\begin{minted}[fontsize=\footnotesize]{java}
+    
+    public class Main{
+        public static void main(String []args){
+            myClass x = new myClass(1,2);
+            xx = x;
+            System.out.println(x.add());
+            x = null;  
+            System.gc(); //Runtime.getRuntime().gc(); es equivalent
+        }
+    }
+\end{minted}  
+Al segon exemple, tot i cridar al GC, l'objecte creat no ha de ser eliminat ja que la variable 'xx' apunta encara l'objecte.
+
+\subsection{Python}
+A Python, totes les dades del programa estan representades per objectes, que tenen un tipus, un valor i una identitat(id). Aquest id es l'adreça on esta emmagatzemat l'objecte. Com Python es un llenguatge interpretat tots els objectes son dinàmics. Els objectes es creen amb l'operador '=' seguit d'un constructor i es poden eliminar de l'execució amb la crida \textit{del}.
+
+\begin{minted}[fontsize=\footnotesize]{python}
+	>>> x = 23
+	>>> type(x)
+	<class int>
+	>>> hex(id(x))
+	'0x7ffc7c571960'
+	>>> del x
+	Traceback (most recent call last):
+	File "<stdin>", line 1, in <module>
+	NameError: name 'x' is not defined
+\end{minted} 
+\begin{minipage}{\textwidth}    %mantener en la misma pagina
+Al exemple, creem un objecte "x", del tipus \textit{int}, comprovem el seu id (direcció on es troba l'objecte) i l'eliminem del programa. Com podem veure, la gestió dels objectes es fa amb una interfície molt fàcil. Sota aquesta crida a \textit{del} hi ha un \textbf{garbage collector} que es pot configurar al gust del usuari amb la interfície\cite{pythonGC}.
+\end{minipage}
+

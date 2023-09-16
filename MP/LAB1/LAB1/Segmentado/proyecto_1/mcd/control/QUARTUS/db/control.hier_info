@@ -1,0 +1,14 @@
+|control
+reloj => \reg_estado:v_estado~1.DATAIN
+pcero => \reg_estado:v_estado~3.DATAIN
+op_dis => ~NO_FANOUT~
+consumo => ~NO_FANOUT~
+igualcero => ~NO_FANOUT~
+menor => ~NO_FANOUT~
+ini <= ini.DB_MAX_OUTPUT_PORT_TYPE
+pe_a <= pe_a.DB_MAX_OUTPUT_PORT_TYPE
+pe_b <= pe_b.DB_MAX_OUTPUT_PORT_TYPE
+finalizada <= finalizada.DB_MAX_OUTPUT_PORT_TYPE
+desocupada <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

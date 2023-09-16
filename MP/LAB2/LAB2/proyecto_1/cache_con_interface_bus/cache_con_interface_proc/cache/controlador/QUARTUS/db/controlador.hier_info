@@ -1,0 +1,40 @@
+|controlador
+reloj => ~NO_FANOUT~
+pcero => prxestado.IN1
+pcero => v_resp.OUTPUTSELECT
+pcero => v_resp.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_s_control.OUTPUTSELECT
+pcero => v_pet_m.OUTPUTSELECT
+pcero => v_pet_m.OUTPUTSELECT
+pcero => v_pet_m.OUTPUTSELECT
+pet.ini => prxestado.IN1
+pet.esc => es_acierto.IN1
+pet.acc => prxestado.IN1
+pet.acc => Selector0.IN4
+pet.acc => prxestado.IN1
+pet.acc => prxestado.IN1
+s_estado.EST => derechos_acceso.IN0
+s_estado.AF => derechos_acceso.IN1
+s_control.muxE <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.ET_esc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.ET_acc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.EST_DE <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.EST_esc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.EST_acc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.DAT_esc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+s_control.DAT_acc <= v_s_control.DB_MAX_OUTPUT_PORT_TYPE
+resp.finalizada <= v_resp.DB_MAX_OUTPUT_PORT_TYPE
+resp.listo <= v_resp.DB_MAX_OUTPUT_PORT_TYPE
+resp_m.m_val => ~NO_FANOUT~
+pet_m.m_esc <= v_pet_m.DB_MAX_OUTPUT_PORT_TYPE
+pet_m.m_pet <= v_pet_m.DB_MAX_OUTPUT_PORT_TYPE
+pet_m.m_acc <= v_pet_m.DB_MAX_OUTPUT_PORT_TYPE
+
+

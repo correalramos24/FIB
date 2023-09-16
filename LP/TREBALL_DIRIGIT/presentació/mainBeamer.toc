@@ -1,0 +1,10 @@
+\babel@toc {catalan}{}
+\beamer@sectionintoc {1}{Introducció als recolector de memòria brossa}{3}{0}{1}
+\beamer@sectionintoc {2}{Problemes en la gestió de la memòria}{5}{0}{2}
+\beamer@sectionintoc {3}{Principis dels \textit {garbage collector}}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Objectes a Java}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Objectes a Python}{9}{0}{3}
+\beamer@sectionintoc {4}{Algoritmes de \textit {garbage collection}}{10}{0}{4}
+\beamer@sectionintoc {5}{\textit {Garbage collection} a Java}{11}{0}{5}
+\beamer@sectionintoc {6}{Alternatives als \textit {garbage collector}}{15}{0}{6}
+\beamer@sectionintoc {7}{Conclusions}{16}{0}{7}

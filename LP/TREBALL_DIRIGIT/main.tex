@@ -1,0 +1,54 @@
+\documentclass{report}
+
+\usepackage{csquotes}   %?
+\usepackage[catalan]{babel} %text titles, etc...
+\usepackage{graphicx}   %image support
+\usepackage{titlepic}   %image in the title
+\usepackage{minted}     %code examples  
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{array}
+
+\renewcommand\thesection{\arabic{section}}
+
+\graphicspath{{./images}}
+
+\include{parts/0footerHeader.tex} %footer - header
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+%referencias
+\usepackage[backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\nocite{*}
+
+\begin{document}
+ 
+\input{parts/0portada.tex}
+
+\tableofcontents
+\newpage
+
+
+\section{Introducció}
+\input{parts/1intro.tex}
+
+\section{Motivació}
+\input{parts/2motivacio.tex}
+
+\section{Ús dels garbage collector}
+\input{parts/3Exemples.tex}
+
+\input{parts/4Algorismes.tex}
+
+\input{parts/5Alternatives.tex}
+
+\input{parts/6Avantatges.tex}
+
+\input{parts/7Conclusions.tex}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

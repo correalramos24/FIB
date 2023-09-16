@@ -1,0 +1,11 @@
+A = imread('Label 5.tif');
+%imshow(A)
+hv = fspecial('sobel');
+hh = hv';
+V = imfilter(double(A), hv);
+H = imfilter(double(A), hh);
+%C = abs(V.*V+H.*H)
+imshow(H, );
+O = max(V,H);
+C45 = abs(O - (pi/4)) < 0.1;
+%imshow(C45, []);

@@ -1,0 +1,15 @@
+https://en.cppreference.com/w/
+https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals
+https://www.freecodecamp.org/news/a-guide-to-garbage-collection-in-programming/
+https://www.lucidchart.com/techblog/2017/10/30/the-dangers-of-garbage-collected-languages/
+2.5.3. Heap -> https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-2.html
+
+https://www.cprogramming.com/tutorial/memory_debugging_parallel_inspector.html
+
+12/12/2020
+https://www.baeldung.com/jvm-garbage-collectors
+https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
+https://www.geeksforgeeks.org/garbage-collection-java/
+
+Declaració objectes a Java:
+https://docs.oracle.com/javase/tutorial/java/javaOO/objectcreation.html

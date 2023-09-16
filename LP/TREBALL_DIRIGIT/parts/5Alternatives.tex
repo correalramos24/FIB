@@ -1,0 +1,24 @@
+\begin{minipage}{\textwidth}    %mantener en la misma pagina
+\section{Alternatives}
+Per gestionar l'espai de \textit{heap} a memòria existeixen altres alternatives, no tan genèriques i més especialitzades en aplicacions concretes. Alguns algoritmes són:
+
+\subsection{Assignació per \textit{frame}}
+Aquesta estratègia consisteix a reservar memòria i descartar-la sencera en certs esdeveniments; s'ha de poder garantir:
+\begin{itemize}
+\item La vida dels objectes acaba abans dels esdeveniments.
+\item La mida dels objectes està acotada (per evitar quedar-nos sense memòria).
+\end{itemize}
+Aquest algorisme és típic dels videojocs (on la unitat d'esdeveniment és un frame) o les peticions a servidors web (la mida dels objectes 'petició' és constant).
+\end{minipage}
+
+\subsection{\textit{Pool} d'objectes}
+Una altra forma de reservar memòria està bassada en reutilitzar els objectes. Inicialment es reserva espai per N objectes (de mida fixa) i s'anoten com no utilitzats, alhora de reservar memòria es busca un objecte lliure. En aquesta construcció s'ha de poder garantir:
+\begin{itemize}
+\item La mida dels objectes és similar.
+\item S'han de crear i destruir objectes freqüentment, per amortitzar l'espai de control de la \textit{pool} i tota la reserva de memòria inicial.
+\item Ha d'existir un nombre màxim d'objectes alhora.
+\end{itemize}
+
+\subsection{Reserva directa a la pila}
+És possible, per alguns casos on les reserves de memòria dinàmica no són molt grans i la nostra arquitectura de sistema ens ho permet; reservar directament espai dinàmic a la pila. Aquesta estratègia afegeix moltes restriccions als nostres programes i no és gaire utilitzada.
+

@@ -1,0 +1,9 @@
+\newpage
+\section{Conclusió}
+Com s'ha pogut veure en aquest treball, l'automatització en la gestió de les regions de memòria dinàmica aporten coses bones i dolentes, depenent de l'ús de l'aplicació.
+
+Si tenim una aplicació on els temps de resposta és important (per exemple aplicacions de temps real) és recomanable no utilitzar sistemes de \textit{garbage collection}, ja que podem perdre interaccions amb els usuaris. De forma anàloga per aplicacions on es busca un màxim rendiment. Si aquest fet no importa, podem utilitzar sistemes automàtics.
+
+D'altra banda, per fer prototipat ràpid de codi/aplicacions; els recollidors de memòria brossa simplifiquen el codi i el seu desenvolupament. Un cop fet un prototipat, transferir els algoritmes d'un codi amb recolectors cap a un codi on el programador és responsable del \textit{heap} és mitjanament senzill.
+
+Per tant, podem concloure que els algoritmes de \textit{garbage collection} treuen temps d'execucció als programes i s'ha de tenir cura en quin context s'utilitzen. Molts cops es poden modificar paràmetres i versions dels recollidors per ajustar-ho el mès possible a les nostres aplicacions.

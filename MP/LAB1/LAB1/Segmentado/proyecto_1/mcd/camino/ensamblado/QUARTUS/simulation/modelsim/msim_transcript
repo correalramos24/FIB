@@ -1,0 +1,99 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do camino_mcd_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/tipos_constantes_pkg/retardos_componentes_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_componentes_pkg
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/tipos_constantes_pkg/param_disenyo_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package param_disenyo_pkg
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes_pkg/componentes_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Compiling package componentes_pkg
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes/MUX/CODIGO/mux2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_componentes_pkg
+# -- Compiling entity mux2
+# -- Compiling architecture comportamiento of mux2
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes/REGISTROS/CODIGO/rd_n_pe.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_componentes_pkg
+# -- Compiling entity RD_N_pe
+# -- Compiling architecture comportamiento of RD_N_pe
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes/menor/CODIGO/menqu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_componentes_pkg
+# -- Compiling entity menqu
+# -- Compiling architecture comport of menqu
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes/igual_cero/CODIGO/igual_cero.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_componentes_pkg
+# -- Compiling entity igual_cero
+# -- Compiling architecture comport of igual_cero
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Secuencial/proyecto_1/mcd/camino/componentes/sumador/CODIGO/sumador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_componentes_pkg
+# -- Compiling entity sumador
+# -- Compiling architecture compor of sumador
+# vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Segmentado/proyecto_1/mcd/camino/ensamblado/CODIGO/camino_mcd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_pkg
+# -- Compiling entity camino_mcd
+# -- Compiling architecture estruc of camino_mcd
+# ** Error: C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Segmentado/proyecto_1/mcd/camino/ensamblado/CODIGO/camino_mcd.vhd(30): (vcom-1436) Actual expression (prefix expression) of formal "SEL" is not globally static.
+# 
+# ** Error: C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Segmentado/proyecto_1/mcd/camino/ensamblado/CODIGO/camino_mcd.vhd(49): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./camino_mcd_run_msim_rtl_vhdl.do line 16
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/victor/Documents/FIBq9/MP/LAB1/LAB1/Segmentado/proyecto_1/mcd/camino/ensamblado/CODIGO/camino_mcd.vhd}"

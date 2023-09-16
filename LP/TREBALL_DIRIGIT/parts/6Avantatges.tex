@@ -1,0 +1,25 @@
+\newpage
+\section{Avantatges i inconvenients}
+
+Un cop descrites totes les tècniques per gestionar la memòria dinàmica, en la següent taula podem comparar els seus arguments a favor i en contra.
+
+\begin{table}[H]
+    \begin{tabular}{|l|m{0.3\textwidth}|m{0.3\textwidth}|}
+    \hline
+    \textbf{Solució} &
+      \textbf{Pros} &
+      \textbf{Contras} \\ \hline
+    \textbf{Garbage collector} &
+      Facilitats pel programador. Detecció d'errors. &
+      Pèrdua de rendiment. Aturades del programa per els GC. \\ \hline
+    \textbf{Gestió del programador} &
+      Proximitat a la memòria. Ús dels apuntadors amb profunditat. &
+      Errors de no incialització. Accesos invàlids.\\ \hline
+    \textbf{Assignació per Frames} &
+      Més ràpid que els GC. &
+      Més específic: Objectes de mida acotada, vida curta dels objectes. Cal definir un esdeveniment per esborrar objectes. \\ \hline
+    \textbf{Pool d'objectes} &
+      Més ràpid que els GC. &
+      Més específic: Objectes de mides similars, nombre màxim d'objectes. Amortització de l'espai reservat. \\ \hline
+    \end{tabular}
+\end{table}

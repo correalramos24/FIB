@@ -1,0 +1,44 @@
+
+Per veure els problemas que ens resolen els \textit{garbage collectors}, prenem com exemple
+el llenguatge C, on la gestió de la memòria és explícita i observem els problemes que ens podem trobar. Ens centrem en la memòria dinàmica del programa, doncs és la que controla el programador.
+
+\begin{enumerate}
+    \item Accés invàlid a memòria : Error al intentar llegir/escriure sobre una regió no reservada.
+
+        \begin{minted}[fontsize=\footnotesize]{c}
+        struct alfa{ int d1; int d2;};
+        char *cP =  (char*) malloc(sizeof(char));
+        free(cP);    
+        strcpy(cP, "helloWorld");
+        \end{minted}    
+        En aquest codi, estem intentant escriure a una regió de memòria que el SO no té assignada al programa. Com a resultat tenim un error de \textit{Violació del segment}.
+
+    \item Fuges de memòria (\textit{Memory leaks}): Si no s'allibera l'espai, el sistema omple la seva regió de \textit{heap} i atura l'execucció del programa.
+
+    \item Reserva/alliberament incompatible: Les operacions i mètodes de cada llibreria de cada llenguatge té la seva pròpia gestió, si barregem crides de diferents llibreries, podem reservar i alliberar diferents quantitats d'espai de memòria.
+    
+    \item Alliberar una regió lliure : Si per error, realliberem una regió ja alliberada obtenim un error.
+    \begin{minted}[fontsize=\footnotesize]{c}
+        int * iP = malloc(sizeof(int));
+        free(iP);
+        free(iP);
+    \end{minted}
+    S'avorta l'execucció del programa amb un missatge d'error similar a \\ \textit{free(): double free detected in tcache 2}
+
+    \item Accés a regions no inicializades: Si no inicializem les dades d'una regió, el resultat pot ser qualsevol valor que estigui anteriorment a la memòria.
+    \begin{minted}[fontsize=\footnotesize]{c}
+        struct alfa{ int d1; int d2;};
+        struct alfa * aP = (struct alfa *) malloc(sizeof(struct alfa));
+        printf("@%x, valor: %i\n",&aP, *aP);//@61fe10 valor: 7213648
+        int resultat = aP->d1 + 24;
+        printf("resultat %i \n", resultat); //resultat 7213648
+        free(aP);
+    \end{minted}    
+    Al codi, veiem que el valor de resultat és arbitrari, ja que el valor mai ha estat inicialitzat.
+    
+    \item Accessos a altres direccions: Si intentem accedir fora del nostre rang de direccions, el sistema operatiu ens ho impedirà.
+        
+\end{enumerate}
+Aquets errors són els que no cal parar atenció en llenguatges de programació amb sistemes de GB i, per tant, redueixen els potencials
+errors en temps d'execucció dels programes.
+
