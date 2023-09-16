@@ -1,0 +1,2150 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do snbits_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/snref.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity snref
+# -- Compiling architecture referencia of snref
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_snbits_reloj
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_snbits_reloj 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.prueba_snbits_reloj(prueba)
+# Loading work.snbits(estructural)
+# Loading work.s1bit(flujodatos)
+# Loading work.snref(referencia)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Error: la comprobacion falla
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Note: numero de errores: 0
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: RESULTADOS RETARDO MAXIMO 90 ns
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: ret max A: 2 B: 4 cen: '0'
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: RESULTADOS RETARDO MINIMO -9223372036854776 ns
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: ret min A: 0 B: 0 cen: 'U'
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+pwd
+# D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/simulation/modelsim
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): (vcom-1136) Unknown identifier "tMin".
+# 
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): Target type (error) in variable assignment is different from expression type std.STANDARD.TIME.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): (vcom-1136) Unknown identifier "tMin".
+# 
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): (vcom-1136) Unknown identifier "tMax".
+# 
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type (error) in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): (vcom-1136) Unknown identifier "tMax".
+# 
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): near "ns": expecting ';'
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(61): near "100000000000000": (vcom-119) Integer value exceeds INTEGER'high.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(62): Target type std.STANDARD.TIME in variable assignment is different from expression type Integer.
+# ** Error: D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd(132): VHDL Compiler exiting
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./snbits_run_msim_rtl_vhdl.do line 11
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}"
+do snbits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity snbits
+# -- Compiling architecture estructural of snbits
+# ** Warning: [4] D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/CODIGO/snbits.vhd(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vcom -93 -work work {d:/fibq7/ac2/lab2 ac2/suma/componentes/sum1bit/codigo/s1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/prueba_snbits_reloj.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity prueba_snbits_reloj
+# -- Compiling architecture prueba of prueba_snbits_reloj
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB2 AC2/SUMA/SUMGENERA/QUARTUS/../PRUEBAS/snref.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity snref
+# -- Compiling architecture referencia of snref
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_snbits_reloj
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_snbits_reloj 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.prueba_snbits_reloj(prueba)
+# Loading work.snbits(estructural)
+# Loading work.s1bit(flujodatos)
+# Loading work.snref(referencia)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_snbits_reloj/sumadoref
+# ** Error: la comprobacion falla
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 1800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 2800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 3800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 4800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 5800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 6800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 7800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 8800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 9800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 11800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 12800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 13800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 14800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 15800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 16800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 17800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 18800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 19800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 21800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 22800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 23800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 24800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 25800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 26800 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27200 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27600 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 27800 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28 us  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28200 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 2  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 28400 ns  Iteration: 3  Instance: /prueba_snbits_reloj/sumadoref
+# ** Note: numero de errores: 0
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: RESULTADOS RETARDO MAXIMO 90 ns
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: ret max A: 2 B: 4 cen: '0'
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: RESULTADOS RETARDO MINIMO -9223372036854576 ns
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj
+# ** Note: ret min A: 0 B: 0 cen: '0'
+#    Time: 28600 ns  Iteration: 1  Instance: /prueba_snbits_reloj

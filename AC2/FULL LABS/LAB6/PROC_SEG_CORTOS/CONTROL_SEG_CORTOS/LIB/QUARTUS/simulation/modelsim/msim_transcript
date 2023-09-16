@@ -1,0 +1,863 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do LIB_C_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/tipos_constantes_pkg/retardos_RegDes_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_RegDes_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4/PROC_SERIE/tipos_constantes_pkg/riscv32_coop_funct_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package riscv32_coop_funct_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/tipos_constantes_pkg/retardos_cntl_seg_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_cntl_seg_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/tipos_constantes_pkg/retardos_cntl_seg_C_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_cntl_seg_C_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/tipos_constantes_pkg/cte_tipos_deco_camino_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cte_tipos_deco_camino_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4/PROC_SERIE/tipos_constantes_pkg/param_disenyo_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package param_disenyo_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/andv3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andv3
+# -- Compiling architecture comportamiento of andv3
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/andv1n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andv1n
+# -- Compiling architecture comportamiento of andv1n
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/orv2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity orv2
+# -- Compiling architecture comportamiento of orv2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4/PROC_SERIE/tipos_constantes_pkg/cte_tipos_UF_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Compiling package cte_tipos_UF_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/RegDes_pkg/RegDes_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Compiling package RegDes_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/componentes_cntl_seg_pkg/componentes_control_seg_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_control_seg_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/componentes_cntl_seg_pkg/componentes_control_seg_C_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_control_seg_C_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/CODIGO/rdb_n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_RegDes_pkg
+# -- Compiling entity RDB_N
+# -- Compiling architecture comportamiento of RDB_N
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/CODIGO/rdi_n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_RegDes_pkg
+# -- Compiling entity RDI_N
+# -- Compiling architecture comportamiento of RDI_N
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/CODIGO/rd_n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_RegDes_pkg
+# -- Compiling entity RD_N
+# -- Compiling architecture comportamiento of RD_N
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/CODIGO/rdi_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_RegDes_pkg
+# -- Compiling entity RDI_1
+# -- Compiling architecture comportamiento of RDI_1
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/REGISTRO_DESACOPLO/CODIGO/rd_1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_RegDes_pkg
+# -- Compiling entity RD_1
+# -- Compiling architecture comportamiento of RD_1
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/VALIDACION/CODIGO/valreg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package param_disenyo_pkg
+# -- Compiling entity valreg
+# -- Compiling architecture compor of valreg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/COMPARADOR/CODIGO/cmp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Compiling entity cmp
+# -- Compiling architecture compor of cmp
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/COMPONENTES/LATPROH/CODIGO/inst_latproh.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package param_disenyo_pkg
+# -- Compiling entity inst_latproh
+# -- Compiling architecture compor of inst_latproh
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/COMPONENTES/LDRD/CODIGO/ldrd_c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_cntl_seg_C_pkg
+# -- Compiling entity LDRD_C
+# -- Compiling architecture comportamiento of LDRD_C
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/CODIGO/LIB_C.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package componentes_control_seg_C_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LIB_C
+# -- Compiling architecture estructural of LIB_C
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/DECO_PBR_opSEC/CODIGO/rdecopbropsec.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package RegDes_pkg
+# -- Compiling entity RdecoPBRopSEC
+# -- Compiling architecture estructural of RdecoPBRopSEC
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/DECO_PBR_opSEC/CODIGO/decopbropsec.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package param_disenyo_pkg
+# -- Compiling entity decoPBRopSEC
+# -- Compiling architecture comportamiento of decoPBRopSEC
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/COMPONENTES/ENSAM_RD/CODIGO/ensam_rd_c.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package componentes_control_seg_C_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity ensam_RD_C
+# -- Compiling architecture estructural of ensam_RD_C
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/SENYALES_CNTL/CODIGO/senya_cntlrd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Loading package RegDes_pkg
+# -- Compiling entity senya_cntlRD
+# -- Compiling architecture estructural of senya_cntlRD
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/LDD/CODIGO/ldd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LDD
+# -- Compiling architecture estructural of LDD
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/COMPONENTES/LATPROH/CODIGO/latproh.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package RegDes_pkg
+# -- Compiling entity latproh
+# -- Compiling architecture estruc of latproh
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/COMPONENTES/LDC/CODIGO/ldc.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package RegDes_pkg
+# -- Loading package retardos_cntl_seg_C_pkg
+# -- Compiling entity LDC
+# -- Compiling architecture estructural of LDC
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/ENSAM_RS/CODIGO/ensam_rs.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity ensam_RS
+# -- Compiling architecture estructural of ensam_RS
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/SENYALES_CNTL/CODIGO/senya_cntlrs.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Loading package RegDes_pkg
+# -- Compiling entity senya_cntlRS
+# -- Compiling architecture estructural of senya_cntlRS
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/LDRS/CODIGO/ldrs.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LDRS
+# -- Compiling architecture comportamiento of LDRS
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/LGR/CODIGO/lgr.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LGR
+# -- Compiling architecture comportamiento of LGR
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/componentes_cntl_seg_pkg/componentes_control_seg_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_control_seg_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/tipos_constantes_pkg/retardos_cntl_seg_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_cntl_seg_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/andv2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andv2
+# -- Compiling architecture comportamiento of andv2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/andv1n.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andv1n
+# -- Compiling architecture comportamiento of andv1n
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/andv3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andv3
+# -- Compiling architecture comportamiento of andv3
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/orv2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity orv2
+# -- Compiling architecture comportamiento of orv2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/PUERTAS/CODIGO/orvn.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity orvn
+# -- Compiling architecture comportamiento of orvn
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB5/PROC_SEGMENTADO/CONTROL_SEGMENTACION/COMPONENTES/COMPARADOR/CODIGO/cmp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Compiling entity cmp
+# -- Compiling architecture compor of cmp
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_latproh.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package RegDes_pkg
+# -- Compiling entity latproh_v
+# -- Compiling architecture estructural of latproh_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LDC.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package RegDes_pkg
+# -- Loading package retardos_cntl_seg_C_pkg
+# -- Compiling entity LDC_v
+# -- Compiling architecture estructural of LDC_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LDD.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LDD_v
+# -- Compiling architecture estructural of LDD_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LDRD_C.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package retardos_cntl_seg_C_pkg
+# -- Compiling entity LDRD_C_v
+# -- Compiling architecture estructural of LDRD_C_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LDRS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LDRS_v
+# -- Compiling architecture estructural of LDRS_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LGR.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LGR_v
+# -- Compiling architecture estructural of LGR_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_ensam_RD_C.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package componentes_control_seg_C_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity ensam_RD_C_v
+# -- Compiling architecture estructural of ensam_RD_C_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_ensam_RS.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity ensam_RS_v
+# -- Compiling architecture estructural of ensam_RS_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/VHDL_P/enc_LIB_C.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package componentes_control_seg_pkg
+# -- Loading package retardos_cntl_seg_pkg
+# -- Compiling entity LIB_C_v
+# -- Compiling architecture estructural of LIB_C_v
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB4/PROC_SERIE/UTILIDADES_pkg/generar_impri_instruc_pkg/codificar_instrucciones_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Compiling package codificar_instrucciones_pkg
+# -- Compiling package body codificar_instrucciones_pkg
+# -- Loading package codificar_instrucciones_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB4/PROC_SERIE/UTILIDADES_pkg/generar_impri_instruc_pkg/imprimir_inst_ascii_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package param_disenyo_pkg
+# -- Compiling package imprimir_inst_ascii_pkg
+# -- Compiling package body imprimir_inst_ascii_pkg
+# -- Loading package imprimir_inst_ascii_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../../../../../LAB4/PROC_SERIE/UTILIDADES_pkg/impri_instruc_pkg/deco_Inst_impri_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package imprimir_inst_ascii_pkg
+# -- Compiling package deco_inst_impri_pkg
+# -- Compiling package body deco_inst_impri_pkg
+# -- Loading package deco_inst_impri_pkg
+# vcom -2008 -work work {D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/prueba_LIB_C.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package codificar_instrucciones_pkg
+# -- Loading package imprimir_inst_ascii_pkg
+# -- Loading package deco_inst_impri_pkg
+# -- Compiling entity prueba_LIB_C
+# -- Compiling architecture comportamiento of prueba_LIB_C
+# ** Warning: D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/prueba_LIB_C.vhd(63): (vcom-1236) Shared variables must be of a protected type.
+# 
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_LIB_C
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_LIB_C 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.cte_tipos_deco_camino_pkg
+# Loading work.param_disenyo_pkg
+# Loading work.riscv32_coop_funct_pkg
+# Loading work.cte_tipos_uf_pkg
+# Loading work.codificar_instrucciones_pkg(body)
+# Loading work.imprimir_inst_ascii_pkg(body)
+# Loading work.deco_inst_impri_pkg(body)
+# Loading work.prueba_lib_c(comportamiento)
+# Loading work.componentes_control_seg_pkg
+# Loading work.componentes_control_seg_c_pkg
+# Loading work.retardos_cntl_seg_pkg
+# Loading work.lib_c(estructural)
+# Loading work.regdes_pkg
+# Loading work.rdecopbropsec(estructural)
+# Loading work.retardos_regdes_pkg
+# Loading work.rdb_n(comportamiento)
+# Loading work.decopbropsec(comportamiento)
+# Loading work.ensam_rd_c(estructural)
+# Loading work.senya_cntlrd(estructural)
+# Loading work.rdi_n(comportamiento)
+# Loading work.rd_n(comportamiento)
+# Loading work.rdi_1(comportamiento)
+# Loading work.rd_1(comportamiento)
+# Loading work.valreg(compor)
+# Loading work.ldd(estructural)
+# Loading work.cmp(compor)
+# Loading work.andv3(comportamiento)
+# Loading work.andv1n(comportamiento)
+# Loading work.inst_latproh(compor)
+# Loading work.latproh(estruc)
+# Loading work.retardos_cntl_seg_c_pkg
+# Loading work.ldrd_c(comportamiento)
+# Loading work.ldc(estructural)
+# Loading work.ensam_rs(estructural)
+# Loading work.senya_cntlrs(estructural)
+# Loading work.ldrs(comportamiento)
+# Loading work.orv2(comportamiento)
+# Loading work.lgr(comportamiento)
+# Loading work.lib_c_v(estructural)
+# Loading work.ensam_rd_c_v(estructural)
+# Loading work.ldd_v(estructural)
+# Loading work.latproh_v(estructural)
+# Loading work.ldrd_c_v(estructural)
+# Loading work.ldc_v(estructural)
+# Loading work.ensam_rs_v(estructural)
+# Loading work.ldrs_v(estructural)
+# Loading work.lgr_v(estructural)
+# 
+# do D:/FIBQ7/AC2/LAB6/PROC_SEG_CORTOS/CONTROL_SEG_CORTOS/LIB/QUARTUS/../PRUEBAS/formato_ventanas.do
+# transcript on
+# log -r /*
+# if {[batch_mode] == 0} then { do wave.do }
+# onerror {resume}
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat/senyales_cntl { (context /prueba_lib_c/logica_LIB/R_dat/senyales_cntl )(PBR & PBRA & PBRM & PBRF & PBRE )} PBRs
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat/LDDat { (context /prueba_lib_c/logica_LIB/R_dat/LDDat )(IDL1A & IDL1M & IDL1F & IDL1E )} DepL1
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat/LDDat { (context /prueba_lib_c/logica_LIB/R_dat/LDDat )(IDL2A & IDL2M & IDL2F & IDL2E )} DepL2
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat/cortos { (context /prueba_lib_c/logica_LIB/R_dat/cortos )(C4L1 & C3L1 & C2L1 & C1L1 )} CL1
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat/cortos { (context /prueba_lib_c/logica_LIB/R_dat/cortos )(C4L2 & C3L2 & C2L2 & C1L2 )} CL2
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(bloqCP & bloqBDL & inyecBDL & inyecDLA )} bCP_bBDL_iBDL_iDLA
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(bloqCP_ok & bloqBDL_ok & inyecBDL_ok & inyecDLA_ok )} bCP_bBDL_iBDL_iDLA_ok
+# quietly virtual signal -install /prueba_lib_c/logica_LIB { (context /prueba_lib_c/logica_LIB )(R_dat/R_dat/RD & R_Sec/R_sec/RS )} RD_RS
+# quietly virtual signal -install /prueba_lib_c/ok_LIB { (context /prueba_lib_c/ok_LIB )(R_dat/R_dat/RD & R_Sec/R_sec/RS )} RD_RS_ok
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(C1L1_ok & C2L1_ok & C3L1_ok & C4L1_ok )} CL1_ok
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(C1L2_ok & C2L2_ok & C3L2_ok & C4L2_ok )} CL2_ok
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(C1L1 & C2L1 & C3L1 & C4L1 )} CL1
+# quietly virtual signal -install /prueba_lib_c { (context /prueba_lib_c )(C1L2 & C2L2 & C3L2 & C4L2 )} CL2
+# quietly virtual signal -install /prueba_lib_c/logica_LIB/R_dat { (context /prueba_lib_c/logica_LIB/R_dat )(latphA & latphM )} latphA_M
+# quietly virtual signal -install /prueba_lib_c/ok_LIB/R_dat { (context /prueba_lib_c/ok_LIB/R_dat )(latphA & latphM )} latph_A_M_ok
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /prueba_lib_c/ciclo
+# add wave -noupdate /prueba_lib_c/reloj
+# add wave -noupdate /prueba_lib_c/pcero
+# add wave -noupdate -divider INSTRUCCIONS
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucB
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucDL
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucA
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucM
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucF
+# add wave -noupdate -radix hexadecimal /prueba_lib_c/instrucE
+# add wave -noupdate -divider CURTCIRCUITS
+# add wave -noupdate /prueba_lib_c/CL1
+# add wave -noupdate /prueba_lib_c/CL2
+# add wave -noupdate -divider CURTCIRCUITS_OK
+# add wave -noupdate /prueba_lib_c/CL1_ok
+# add wave -noupdate /prueba_lib_c/CL2_ok
+# add wave -noupdate -divider RISCS_GESTIO
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/latphA_M
+# add wave -noupdate /prueba_lib_c/logica_LIB/RD_RS
+# add wave -noupdate /prueba_lib_c/bCP_bBDL_iBDL_iDLA
+# add wave -noupdate -divider RISCS_GESTIO_OK
+# add wave -noupdate /prueba_lib_c/ok_LIB/R_dat/latph_A_M_ok
+# add wave -noupdate /prueba_lib_c/ok_LIB/RD_RS_ok
+# add wave -noupdate /prueba_lib_c/bCP_bBDL_iBDL_iDLA_ok
+# add wave -noupdate -divider IDENTIFICADORS_REGISTRES
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/LDDat/IDL1
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/LDDat/IDL2
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/genvalreg/valIDL1
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/genvalreg/valIDL2
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/rd
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/rdA
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/rdM
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/rdF
+# add wave -noupdate -radix unsigned /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/rdE
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/senyales_cntl/PBRs
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/LDDat/DepL1
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_dat/LDDat/DepL2
+# add wave -noupdate -divider SECUEN
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_Sec/senyales_cntl/opsec
+# add wave -noupdate /prueba_lib_c/logica_LIB/R_Sec/senyales_cntl/opsecA
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {1320000 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 368
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 40000
+# configure wave -gridperiod 80000
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ns
+# update
+# WaveRestoreZoom {399218 ps} {2240782 ps}
+# run -all
+# Cicle; Dep L1_AMFE L2_AMFE; Curts L1_1234 L2_1234; latphA_M; RD_RS; bCP_bBDL_iBDL_iDLA
+# sortides esperades, instruccions DL ALU M F ES
+# 2   0000 0000 0000 0000 00 00 0000      add x3 , x1 , x2      addi x0 , x0 , x000     XXX     XXX     XXX
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 3   1000 1000 0000 0000 00 00 0000      add x11, x3 , x3       add x3 , x1 , x2      addi x0 , x0 , x000     XXX     XXX
+# esp 1000 1000 0000 0000 00 00 0000 
+# 
+# 4   0100 0100 1000 1000 00 00 0000      add x12, x3 , x3       add x11, x3 , x3       add x3 , x1 , x2      addi x0 , x0 , x000     XXX
+# esp 0100 0100 1000 1000 00 00 0000 
+# 
+# 5   0010 0010 0110 0110 00 00 0000      add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3       add x3 , x1 , x2      addi x0 , x0 , x000
+# esp 0010 0010 0110 0110 00 00 0000 
+# 
+# 6   0001 0001 0001 0001 00 00 0000      add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3       add x3 , x1 , x2  
+# esp 0001 0001 0001 0001 00 00 0000 
+# 
+# 7   0000 0000 0000 0000 00 00 0000      add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 8   0000 0000 0000 0000 00 00 0000       lw x3 , xFFC(x1 )     add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 9   1000 1000 0000 0000 10 10 1101      add x11, x3 , x3        lw x3 , xFFC(x1 )     add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3  
+# esp 1000 1000 0000 0000 10 10 1101 
+# 
+# 10  0100 0100 1000 1000 01 10 1101      add x11, x3 , x3      addi x0 , x0 , x000      lw x3 , xFFC(x1 )     add x15, x3 , x3       add x14, x3 , x3  
+# esp 0100 0100 1000 1000 01 10 1101 
+# 
+# 11  0010 0010 0110 0110 00 00 0000      add x11, x3 , x3      addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x1 )     add x15, x3 , x3  
+# esp 0010 0010 0110 0110 00 00 0000 
+# 
+# 12  0001 0001 0001 0001 00 00 0000      add x12, x3 , x3       add x11, x3 , x3      addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x1 )
+# esp 0001 0001 0001 0001 00 00 0000 
+# 
+# 13  0000 0000 0000 0000 00 00 0000      add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3      addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 14  0000 0000 0000 0000 00 00 0000      add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3      addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 15  0000 0000 0000 0000 00 00 0000      add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3       add x11, x3 , x3  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 16  0000 0000 0000 0000 00 00 0000      add x3 , x1 , x2       add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3       add x12, x3 , x3  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 17  1000 0000 0000 0000 00 00 0000      add x3 , x3 , x4       add x3 , x1 , x2       add x15, x3 , x3       add x14, x3 , x3       add x13, x3 , x3  
+# esp 1000 0000 0000 0000 00 00 0000 
+# 
+# 18  1100 0000 1000 0000 00 00 0000      add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x1 , x2       add x15, x3 , x3       add x14, x3 , x3  
+# esp 1100 0000 1000 0000 00 00 0000 
+# 
+# 19  1110 0000 1110 0000 00 00 0000      add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x1 , x2       add x15, x3 , x3  
+# esp 1110 0000 1110 0000 00 00 0000 
+# 
+# 20  1111 0000 1111 0000 00 00 0000      add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x1 , x2  
+# esp 1111 0000 1111 0000 00 00 0000 
+# 
+# 21  1111 0000 1111 0000 00 00 0000      add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4  
+# esp 1111 0000 1111 0000 00 00 0000 
+# 
+# 22  0000 0000 1100 0000 00 00 0000       lw x3 , xFFC(x1 )     add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4  
+# esp 0000 0000 1100 0000 00 00 0000 
+# 
+# 23  1111 0000 0011 0000 10 10 1101       lw x3 , xFFC(x3 )      lw x3 , xFFC(x1 )     add x3 , x3 , x4       add x3 , x3 , x4       add x3 , x3 , x4  
+# esp 1111 0000 0011 0000 10 10 1101 
+# 
+# 24  0111 0000 1111 0000 01 10 1101       lw x3 , xFFC(x3 )    addi x0 , x0 , x000      lw x3 , xFFC(x1 )     add x3 , x3 , x4       add x3 , x3 , x4  
+# esp 0111 0000 1111 0000 01 10 1101 
+# 
+# 25  0011 0000 0111 0000 00 00 0000       lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x1 )     add x3 , x3 , x4  
+# esp 0011 0000 0111 0000 00 00 0000 
+# 
+# 26  1001 0000 0001 0000 10 10 1101       lw x3 , xFFC(x3 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x1 )
+# esp 1001 0000 0001 0000 10 10 1101 
+# 
+# 27  0100 0000 1000 0000 01 10 1101       lw x3 , xFFC(x3 )    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0100 0000 1000 0000 01 10 1101 
+# 
+# 28  0010 0000 0110 0000 00 00 0000       lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000
+# esp 0010 0000 0110 0000 00 00 0000 
+# 
+# 29  1001 0000 0001 0000 10 10 1101       lw x3 , xFFC(x3 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )
+# esp 1001 0000 0001 0000 10 10 1101 
+# 
+# 30  0100 0000 1000 0000 01 10 1101       lw x3 , xFFC(x3 )    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0100 0000 1000 0000 01 10 1101 
+# 
+# 31  0010 0000 0110 0000 00 00 0000       lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000
+# esp 0010 0000 0110 0000 00 00 0000 
+# 
+# 32  1001 0000 0001 0000 10 10 1101       lw x3 , xFFC(x3 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )
+# esp 1001 0000 0001 0000 10 10 1101 
+# 
+# 33  0100 0000 1000 0000 01 10 1101       lw x3 , xFFC(x3 )    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0100 0000 1000 0000 01 10 1101 
+# 
+# 34  0010 0000 0110 0000 00 00 0000       lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000
+# esp 0010 0000 0110 0000 00 00 0000 
+# 
+# 35  1001 0000 0001 0000 10 10 1101       lw x3 , xFFC(x3 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )
+# esp 1001 0000 0001 0000 10 10 1101 
+# 
+# 36  0100 0000 1000 0000 01 10 1101       lw x3 , xFFC(x3 )    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0100 0000 1000 0000 01 10 1101 
+# 
+# 37  0010 0000 0110 0000 00 00 0000       lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )    addi x0 , x0 , x000
+# esp 0010 0000 0110 0000 00 00 0000 
+# 
+# 38  0000 0000 0000 0000 10 00 0000       lw x3 , xFFC(x1 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x3 , xFFC(x3 )
+# esp 0000 0000 0000 0000 10 00 0000 
+# 
+# 39  0000 0000 0000 0000 11 00 0000      add x3 , x1 , x2        lw x3 , xFFC(x1 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 11 00 0000 
+# 
+# 40  1110 0000 0010 0000 01 00 0000      add x4 , x3 , x2       add x3 , x1 , x2        lw x3 , xFFC(x1 )      lw x3 , xFFC(x3 )    addi x0 , x0 , x000
+# esp 1110 0000 0010 0000 01 00 0000 
+# 
+# 41  0111 0000 1111 0000 00 00 0000      add x5 , x3 , x2       add x4 , x3 , x2       add x3 , x1 , x2        lw x3 , xFFC(x1 )      lw x3 , xFFC(x3 )
+# esp 0111 0000 1111 0000 00 00 0000 
+# 
+# 42  0011 0000 0111 0000 00 00 0000      add x6 , x3 , x2       add x5 , x3 , x2       add x4 , x3 , x2       add x3 , x1 , x2        lw x3 , xFFC(x1 )
+# esp 0011 0000 0111 0000 00 00 0000 
+# 
+# 43  0001 0000 0001 0000 00 00 0000      add x7 , x3 , x2       add x6 , x3 , x2       add x5 , x3 , x2       add x4 , x3 , x2       add x3 , x1 , x2  
+# esp 0001 0000 0001 0000 00 00 0000 
+# 
+# 44  0000 0000 0000 0000 00 00 0000      add x6 , x1 , x2       add x7 , x3 , x2       add x6 , x3 , x2       add x5 , x3 , x2       add x4 , x3 , x2  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 45  1010 0000 0010 0000 00 01 0010     jalr x7 , xF00(x6 )     add x6 , x1 , x2       add x7 , x3 , x2       add x6 , x3 , x2       add x5 , x3 , x2  
+# esp 1010 0000 0010 0000 00 01 0010 
+# 
+# 46  0000 0000 1000 0000 10 01 0010     addi x0 , x0 , x000    jalr x7 , xF00(x6 )     add x6 , x1 , x2       add x7 , x3 , x2       add x6 , x3 , x2  
+# esp 0000 0000 1000 0000 10 01 0010 
+# 
+# 47  0000 0000 0000 0000 01 00 0000     addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )     add x6 , x1 , x2       add x7 , x3 , x2  
+# esp 0000 0000 0000 0000 01 00 0000 
+# 
+# 48  0010 0001 0010 0001 00 00 0000      add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )     add x6 , x1 , x2  
+# esp 0010 0001 0010 0001 00 00 0000 
+# 
+# 49  0000 0000 0000 0000 00 00 0000       lw x6 , x000(x1 )     add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 50  1000 0000 0000 0000 10 11 1101     jalr x7 , xF00(x6 )      lw x6 , x000(x1 )     add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 1000 0000 0000 0000 10 11 1101 
+# 
+# 51  0100 0000 1000 0000 01 11 1101     jalr x7 , xF00(x6 )    addi x0 , x0 , x000      lw x6 , x000(x1 )     add x3 , x7 , x6      addi x0 , x0 , x000
+# esp 0100 0000 1000 0000 01 11 1101 
+# 
+# 52  0010 0000 0110 0000 00 01 0010     jalr x7 , xF00(x6 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x6 , x000(x1 )     add x3 , x7 , x6  
+# esp 0010 0000 0110 0000 00 01 0010 
+# 
+# 53  0000 0000 0000 0000 10 01 0010     addi x0 , x0 , x000    jalr x7 , xF00(x6 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x6 , x000(x1 )
+# esp 0000 0000 0000 0000 10 01 0010 
+# 
+# 54  0000 0000 0000 0000 01 00 0000     addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 01 00 0000 
+# 
+# 55  0010 0000 0010 0000 00 00 0000      add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )    addi x0 , x0 , x000
+# esp 0010 0000 0010 0000 00 00 0000 
+# 
+# 56  0000 0000 0000 0000 00 00 0000           ebreak            add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x7 , xF00(x6 )
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 57  0000 0000 0000 0000 00 00 0000           ebreak                 ebreak            add x3 , x7 , x6      addi x0 , x0 , x000    addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 58  0000 0000 0000 0000 00 00 0000           ebreak                 ebreak                 ebreak            add x3 , x7 , x6      addi x0 , x0 , x000
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 59  0000 0000 0000 0000 00 00 0000           ebreak                 ebreak                 ebreak                 ebreak            add x3 , x7 , x6  
+# esp 0000 0000 0000 0000 00 00 0000 
+# 
+# 60  0000 0000 0000 0000 00 00 0000           ebreak                 ebreak                 ebreak                 ebreak                 ebreak       
+# esp 0000 0000 0000 0000 00 00 0000 
+# 

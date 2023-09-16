@@ -1,0 +1,165 @@
+Cicle; Dep L1_AMFE L2_AMFE; RD_RS; bCP_bBDL_iBDL_iDLA
+sortides esperades, instruccions DL ALU M F ES
+
+2   0000 0000 00 0000      add x3 , x1 , x2      addi x0 , x0 , x000     XXX     XXX     XXX
+esp 0000 0000 00 0000 
+
+3   1000 0000 10 1101      add x11, x3 , x10      add x3 , x1 , x2      addi x0 , x0 , x000     XXX     XXX
+esp 1XXX 0000 10 1101 
+
+4   0100 0000 10 1101      add x11, x3 , x10     addi x0 , x0 , x000     add x3 , x1 , x2      addi x0 , x0 , x000     XXX
+esp 01XX 0000 10 1101 
+
+5   0010 0000 10 1101      add x11, x3 , x10     addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2      addi x0 , x0 , x000
+esp 001X 0000 10 1101 
+
+6   0001 0000 10 1101      add x11, x3 , x10     addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2  
+esp 0001 0000 10 1101 
+
+7   0000 0000 00 0000      add x11, x3 , x10     addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+8   0000 0000 00 0000      add x3 , x1 , x2       add x11, x3 , x10     addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+9   0000 1000 10 1101      add x11, x10, x3       add x3 , x1 , x2       add x11, x3 , x10     addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 1XXX 10 1101 
+
+10  0000 0100 10 1101      add x11, x10, x3      addi x0 , x0 , x000     add x3 , x1 , x2       add x11, x3 , x10     addi x0 , x0 , x000
+esp 0000 01XX 10 1101 
+
+11  0000 0010 10 1101      add x11, x10, x3      addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2       add x11, x3 , x10 
+esp 0000 001X 10 1101 
+
+12  0000 0001 10 1101      add x11, x10, x3      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2  
+esp 0000 0001 10 1101 
+
+13  0000 0000 00 0000      add x11, x10, x3      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+14  0000 0000 00 0000      add x0 , x1 , x2       add x11, x10, x3      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+15  0000 0000 00 0000      add x0 , x0 , x10      add x0 , x1 , x2       add x11, x10, x3      addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+16  0000 0000 00 0000      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x1 , x2       add x11, x10, x3      addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+17  0000 0000 00 0000      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x1 , x2       add x11, x10, x3  
+esp 0000 0000 00 0000 
+
+18  0000 0000 00 0000      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x1 , x2  
+esp 0000 0000 00 0000 
+
+19  0000 0000 00 0000      add x0 , x1 , x2       add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10 
+esp 0000 0000 00 0000 
+
+20  0000 0000 00 0000      add x0 , x10, x0       add x0 , x1 , x2       add x0 , x0 , x10      add x0 , x0 , x10      add x0 , x0 , x10 
+esp 0000 0000 00 0000 
+
+21  0000 0000 00 0000      add x0 , x10, x0       add x0 , x10, x0       add x0 , x1 , x2       add x0 , x0 , x10      add x0 , x0 , x10 
+esp 0000 0000 00 0000 
+
+22  0000 0000 00 0000      add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0       add x0 , x1 , x2       add x0 , x0 , x10 
+esp 0000 0000 00 0000 
+
+23  0000 0000 00 0000      add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0       add x0 , x1 , x2  
+esp 0000 0000 00 0000 
+
+24  0000 0000 00 0000      add x3 , x1 , x2       add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0  
+esp 0000 0000 00 0000 
+
+25  0000 1000 11 1101      beq x17, x3 , x00B     add x3 , x1 , x2       add x0 , x10, x0       add x0 , x10, x0       add x0 , x10, x0  
+esp 0000 1XXX 11 1101 
+
+26  0000 0100 11 1101      beq x17, x3 , x00B    addi x0 , x0 , x000     add x3 , x1 , x2       add x0 , x10, x0       add x0 , x10, x0  
+esp 0000 01XX 11 1101 
+
+27  0000 0010 11 1101      beq x17, x3 , x00B    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2       add x0 , x10, x0  
+esp 0000 001X 11 1101 
+
+28  0000 0001 11 1101      beq x17, x3 , x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2  
+esp 0000 0001 11 1101 
+
+29  0000 0000 01 0010      beq x17, x3 , x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+30  0000 0000 01 0010     addi x0 , x0 , x000     beq x17, x3 , x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+31  0000 0000 00 0000     addi x0 , x0 , x000    addi x0 , x0 , x000     beq x17, x3 , x00B    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+32  0000 0000 00 0000      add x3 , x1 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000     beq x17, x3 , x00B    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+33  1000 0000 11 1101      beq x3 , x17, x00B     add x3 , x1 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000     beq x17, x3 , x00B
+esp 1XXX 0000 11 1101 
+
+34  0100 0000 11 1101      beq x3 , x17, x00B    addi x0 , x0 , x000     add x3 , x1 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 01XX 0000 11 1101 
+
+35  0010 0000 11 1101      beq x3 , x17, x00B    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2      addi x0 , x0 , x000
+esp 001X 0000 11 1101 
+
+36  0001 0000 11 1101      beq x3 , x17, x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000     add x3 , x1 , x2  
+esp 0001 0000 11 1101 
+
+37  0000 0000 01 0010      beq x3 , x17, x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+38  0000 0000 01 0010     addi x0 , x0 , x000     beq x3 , x17, x00B    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+39  0000 0000 00 0000     addi x0 , x0 , x000    addi x0 , x0 , x000     beq x3 , x17, x00B    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+40  0000 0000 00 0000       lw x1 , x000(x2 )    addi x0 , x0 , x000    addi x0 , x0 , x000     beq x3 , x17, x00B    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+41  1000 0000 11 1101     jalr x3 , x000(x1 )      lw x1 , x000(x2 )    addi x0 , x0 , x000    addi x0 , x0 , x000     beq x3 , x17, x00B
+esp 1XXX 0000 11 1101 
+
+42  0100 0000 11 1101     jalr x3 , x000(x1 )    addi x0 , x0 , x000      lw x1 , x000(x2 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 01XX 0000 11 1101 
+
+43  0010 0000 11 1101     jalr x3 , x000(x1 )    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x1 , x000(x2 )    addi x0 , x0 , x000
+esp 001X 0000 11 1101 
+
+44  0001 0000 11 1101     jalr x3 , x000(x1 )    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000      lw x1 , x000(x2 )
+esp 0001 0000 11 1101 
+
+45  0000 0000 01 0010     jalr x3 , x000(x1 )    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+46  0000 0000 01 0010     addi x0 , x0 , x000    jalr x3 , x000(x1 )    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 01 0010 
+
+47  0000 0000 00 0000     addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x3 , x000(x1 )    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+48  0010 0000 10 1101      add x1 , x3 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x3 , x000(x1 )    addi x0 , x0 , x000
+esp 001X 0000 10 1101 
+
+49  0001 0000 10 1101      add x1 , x3 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    jalr x3 , x000(x1 )
+esp 0001 0000 10 1101 
+
+50  0000 0000 00 0000      add x1 , x3 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+51  0000 0000 00 0000           ebreak            add x1 , x3 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+52  0000 0000 00 0000           ebreak                 ebreak            add x1 , x3 , x2      addi x0 , x0 , x000    addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+53  0000 0000 00 0000           ebreak                 ebreak                 ebreak            add x1 , x3 , x2      addi x0 , x0 , x000
+esp 0000 0000 00 0000 
+
+54  0000 0000 00 0000           ebreak                 ebreak                 ebreak                 ebreak            add x1 , x3 , x2  
+esp 0000 0000 00 0000 
+
+55  0000 0000 00 0000           ebreak                 ebreak                 ebreak                 ebreak                 ebreak       
+esp 0000 0000 00 0000 
+

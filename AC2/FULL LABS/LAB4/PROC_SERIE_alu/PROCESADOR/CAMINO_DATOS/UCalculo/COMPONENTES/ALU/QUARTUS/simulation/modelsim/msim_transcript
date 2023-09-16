@@ -1,0 +1,609 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/riscv32_coop_funct_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package riscv32_coop_funct_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/retardos_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/param_disenyo_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package param_disenyo_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_deco_camino_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cte_tipos_deco_camino_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_UF_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Compiling package cte_tipos_UF_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/componentes_ALU_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_ALU_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/mx2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling entity mx2
+# -- Compiling architecture comportamiento of mx2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Loading package componentes_ALU_pkg
+# -- Compiling entity alu
+# -- Compiling architecture estruct of alu
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity despla
+# -- Compiling architecture compor of despla
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(35): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(37): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity logica
+# -- Compiling architecture compor of logica
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(28): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(29): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(30): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/sumalg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity sumalg
+# -- Compiling architecture compor of sumalg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/slt.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity slt
+# -- Compiling architecture compor of slt
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity alu_ref
+# -- Compiling architecture compor of alu_ref
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(37): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(38): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(44): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(51): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(52): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(53): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(54): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(55): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(56): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/prueba_alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Compiling entity prueba_alu
+# -- Compiling architecture prueba of prueba_alu
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_alu
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_alu 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.param_disenyo_pkg
+# Loading work.cte_tipos_deco_camino_pkg
+# Loading work.riscv32_coop_funct_pkg
+# Loading work.cte_tipos_uf_pkg
+# Loading work.prueba_alu(prueba)
+# Loading work.retardos_pkg
+# Loading work.componentes_alu_pkg
+# Loading work.alu(estruct)
+# Loading work.despla(compor)
+# Loading work.logica(compor)
+# Loading work.sumalg(compor)
+# Loading work.slt(compor)
+# Loading work.mx2(comportamiento)
+# Loading work.alu_ref(compor)
+# 
+# do D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/formato_ventanas.do
+# ** Error: Cannot open macro file: D:/FIBQ7/AC2/LAB4
+# Error in macro ./alu_run_msim_rtl_vhdl.do line 26
+# Cannot open macro file: D:/FIBQ7/AC2/LAB4
+#     while executing
+# "do D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/formato_ventanas.do"
+do ./../../../PRUEBAS/formato_ventanas.do
+# ** Note: incio
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SLT 
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SLTU
+#    Time: 108900 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: final
+#    Time: 217800 ns  Iteration: 0  Instance: /prueba_alu
+do alu_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/riscv32_coop_funct_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package riscv32_coop_funct_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/retardos_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/param_disenyo_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package param_disenyo_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_deco_camino_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cte_tipos_deco_camino_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_UF_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Compiling package cte_tipos_UF_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/componentes_ALU_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_ALU_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/mx2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling entity mx2
+# -- Compiling architecture comportamiento of mx2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Loading package componentes_ALU_pkg
+# -- Compiling entity alu
+# -- Compiling architecture estruct of alu
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity despla
+# -- Compiling architecture compor of despla
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(35): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(37): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity logica
+# -- Compiling architecture compor of logica
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(28): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(29): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(30): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/sumalg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity sumalg
+# -- Compiling architecture compor of sumalg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/slt.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity slt
+# -- Compiling architecture compor of slt
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity alu_ref
+# -- Compiling architecture compor of alu_ref
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(37): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(38): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(44): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(51): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(52): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(53): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(54): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(55): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(56): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/prueba_alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Compiling entity prueba_alu
+# -- Compiling architecture prueba of prueba_alu
+# ** Error: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/prueba_alu.vhd(47): near "s": expecting BEGIN
+# ** Error: D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./alu_run_msim_rtl_vhdl.do line 22
+# D:/altera/13.0/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/prueba_alu.vhd}"
+do alu_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/riscv32_coop_funct_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package riscv32_coop_funct_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/retardos_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package retardos_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/param_disenyo_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package param_disenyo_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_deco_camino_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package cte_tipos_deco_camino_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE/tipos_constantes_pkg/cte_tipos_UF_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Compiling package cte_tipos_UF_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/componentes_ALU_pkg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package param_disenyo_pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling package componentes_ALU_pkg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/mx2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Compiling entity mx2
+# -- Compiling architecture comportamiento of mx2
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Loading package componentes_ALU_pkg
+# -- Compiling entity alu
+# -- Compiling architecture estruct of alu
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity despla
+# -- Compiling architecture compor of despla
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(35): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/despla.vhd(37): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity logica
+# -- Compiling architecture compor of logica
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(28): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(29): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/logica.vhd(30): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/sumalg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity sumalg
+# -- Compiling architecture compor of sumalg
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/CODIGO/slt.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity slt
+# -- Compiling architecture compor of slt
+# 
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package param_disenyo_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Loading package retardos_pkg
+# -- Compiling entity alu_ref
+# -- Compiling architecture compor of alu_ref
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(36): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(37): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(38): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(44): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(51): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(52): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(53): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(54): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(55): Choice in CASE statement alternative must be locally static.
+# ** Warning: D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/alu_ref.vhd(56): Choice in CASE statement alternative must be locally static.
+# vcom -93 -work work {D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/prueba_alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package param_disenyo_pkg
+# -- Loading package cte_tipos_deco_camino_pkg
+# -- Loading package riscv32_coop_funct_pkg
+# -- Loading package cte_tipos_UF_pkg
+# -- Compiling entity prueba_alu
+# -- Compiling architecture prueba of prueba_alu
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_alu
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_alu 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.param_disenyo_pkg
+# Loading work.cte_tipos_deco_camino_pkg
+# Loading work.riscv32_coop_funct_pkg
+# Loading work.cte_tipos_uf_pkg
+# Loading work.prueba_alu(prueba)
+# Loading work.retardos_pkg
+# Loading work.componentes_alu_pkg
+# Loading work.alu(estruct)
+# Loading work.despla(compor)
+# Loading work.logica(compor)
+# Loading work.sumalg(compor)
+# Loading work.slt(compor)
+# Loading work.mx2(comportamiento)
+# Loading work.alu_ref(compor)
+# 
+# do D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/formato_ventanas.do
+# ** Error: Cannot open macro file: D:/FIBQ7/AC2/LAB4
+# Error in macro ./alu_run_msim_rtl_vhdl.do line 26
+# Cannot open macro file: D:/FIBQ7/AC2/LAB4
+#     while executing
+# "do D:/FIBQ7/AC2/LAB4 AC2/PROC_SERIE_alu/PROCESADOR/CAMINO_DATOS/UCalculo/COMPONENTES/ALU/QUARTUS/../PRUEBAS/formato_ventanas.do"
+do ./../../../PRUEBAS/formato_ventanas.do
+# ** Note: incio
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_ADD 
+#    Time: 0 ps  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SUB 
+#    Time: 108900 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SLL 
+#    Time: 217800 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SLT 
+#    Time: 326700 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SLTU
+#    Time: 435600 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_XOR 
+#    Time: 544500 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SRL 
+#    Time: 653400 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_SRA 
+#    Time: 762300 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_OR  
+#    Time: 871200 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_AND 
+#    Time: 980100 ns  Iteration: 0  Instance: /prueba_alu
+# ** Note: ALU_NO  
+#    Time: 1089 us  Iteration: 0  Instance: /prueba_alu
+# ** Note: final
+#    Time: 1197900 ns  Iteration: 0  Instance: /prueba_alu
