@@ -1,0 +1,48 @@
+# ERROR: No extended dataflow license exists
+# do S4bits_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {/dades/victor.correal/ac2LAB/LAB2/LAB2/SUMA/SUM4/CODIGO/S4bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity S4bits
+# -- Compiling architecture estructural of S4bits
+# vcom -93 -work work {/dades/victor.correal/ac2LAB/LAB2/LAB2/SUMA/COMPONENTES/SUM1BIT/CODIGO/S1bit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity s1bit
+# -- Compiling architecture flujodatos of s1bit
+# 
+# vcom -93 -work work {/dades/victor.correal/ac2LAB/LAB2/LAB2/SUMA/SUM4/PRUEBAS/prueba_s4bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity prueba_S4bits
+# -- Compiling architecture prueba of prueba_S4bits
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  prueba_S4bits
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps prueba_S4bits 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.prueba_s4bits(prueba)
+# 
+# add wave *
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ./S4bits_run_msim_rtl_vhdl.do line 15
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave *"
